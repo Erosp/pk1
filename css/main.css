@@ -1,0 +1,143 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+	font-size: 16px;
+}
+
+/* FIN GENERAL */
+
+/* NAV-MENU */
+
+#menu li > a{
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: #3f3f3f;
+}
+#menu form > button{
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+/* FIN NAV-MENU */
+
+/* SLIDER */
+
+.carousel-inner{
+	max-height: 39rem !important;
+}
+
+/* FIN SLIDER */
+
+/* NOSOTROS */
+
+#local{
+	background: #f3f3f3;
+	margin-top: 30px;
+	padding-top: 50px;
+	padding-bottom: 300px;
+}
+#numerosLocal div{
+	padding: 0px 20px 0px 0px;
+	height: 48px;
+}
+#numerosLocal div:not(:first-child){
+	padding-left: 20px;
+}
+#numerosLocal div:not(:last-child){
+	border-right: 2px solid #3f3f3f;
+}
+#numerosLocal p{
+	margin: 0px;
+}
+
+/* FIN NOSOTROS */
+
+/* FORMULARIO */
+
+#seccionContacto{
+	background: #1b2a4e;
+	min-height: 500px;
+	position: relative;
+}
+#bgContacto{
+	position: relative;
+	top: -200px;
+}
+#contenedorFormulario{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fbfafa;
+	border-radius: 5px;
+	max-width: 500px;
+}
+#tituloFormulario{
+	color: #3f3f3f;
+}
+#imgSoporte{
+	max-height: 230px;
+}
+textarea{
+	resize: none;
+}
+
+/* FIN FORMULARIO */
+
+/* FOOTER */
+
+footer{
+	background: #1b2a4e;
+	min-height: 100px;
+}
+footer p{
+	color: #f3f3f3;
+	text-align: center;
+}
+#iconos i{
+	font-size: 1.625rem;
+	padding: 0px 8px;
+	color: #f3f3f3;
+}
+
+/* FIN FOOTER */
+
+/* MEDIAS QUERY */
+
+@media (max-width: 1200px){
+	#bgContacto{
+		top: -170px;
+	}
+}
+
+@media (max-width: 810px){
+	#bgContacto{
+		top: -150px;
+	}
+}
+
+@media (max-width: 768px){
+	#intro, #equipo{
+		width: 90% !important;
+	}
+	.servicio-fila{
+		width: 100% !important;
+		text-align: center;
+	}
+	#equipo > div > p{
+		display: none;
+	}
+	#bgContacto{
+		top: -110px;
+	}
+}
+
+@media (max-width: 576px){
+	.icono-wrap{
+		flex-wrap: wrap;
+		justify-content: center !important;
+	}
+}
